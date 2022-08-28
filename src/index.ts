@@ -56,3 +56,16 @@ let omar: strAndInt = "omar";
 
 omar = 1;
 // omar = true; err
+
+type days = "SD" | "MD" | "TS" | "FD";
+
+function getDat(day: string): days {
+  if (day == "SD") return "SD";
+  if (day == "SD") return "FD";
+  if (day == "SD") return "MD";
+  else return "TS";
+}
+
+//TUPLES
+let articele: readonly [number, string, boolean];
+articele = [11, "A ONE", false];
