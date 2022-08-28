@@ -15,3 +15,14 @@ let StingOrInteger: number | string; // allows you to redeclare the variable wit
 
 StingOrInteger = "omar"; // its ok
 StingOrInteger = 0; // its ok
+
+let myFrindes: string[] = ["omar", "hosny"];
+
+let myFrindess: (string | number)[] = ["omar", "hosny", 0];
+
+let multiDimensionalArray: (number | number[] | string[] | boolean[])[] = [
+  1,
+  [4, 5, 6],
+  ["omar"],
+  [true],
+];
