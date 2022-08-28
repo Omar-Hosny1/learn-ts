@@ -10,3 +10,5 @@ function add(n1: number, n2: number): number {
 }
 
 console.log(add(10, 1));
+
+let StingOrInteger: number | string; // allows you to redeclare the variable with only these data types;

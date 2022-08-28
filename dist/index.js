@@ -8,3 +8,4 @@ function add(n1, n2) {
     return n1 + n2;
 }
 console.log(add(10, 1));
+let StingOrInteger; // allows you to redeclare the variable with only these data types;
