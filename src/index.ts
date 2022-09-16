@@ -69,3 +69,88 @@ function getDat(day: string): days {
 //TUPLES
 let articele: readonly [number, string, boolean];
 articele = [11, "A ONE", false];
+
+function sayHello(): void {
+  // void dont retutn any thing
+  console.log("Hello");
+}
+
+//enums
+
+enum Levels {
+  easy = 10,
+  medium = 5,
+  hard = 3,
+}
+
+// let lvl = "easy";
+// if (lvl == "easy") {
+//   console.log(`${Levels.easy}`);
+// }
+
+// interface => as interfaceName
+const data: any = "omar";
+// console.log((data as string).charAt(0));
+
+//type anottation for objects
+
+const myObj: {
+  UN: string;
+  ID: number;
+  skills: {
+    1: string;
+    2: string;
+  };
+} = {
+  UN: "omar",
+  ID: 12,
+  skills: {
+    1: "HTML",
+    2: "CSS",
+  },
+};
+
+// console.log(myObj);
+
+// Interface
+
+interface User {
+  id: number;
+  name: string;
+  country: string;
+  sayHello(): string;
+  sayWelcome: () => string;
+  getDouble(num: number): number;
+}
+let Omar: User = {
+  id: 1,
+  name: "omar",
+  country: "Egypt",
+  sayHello() {
+    return "Hello " + this.name;
+  },
+  sayWelcome: () => {
+    return "Welcome " + Omar.name;
+  },
+  getDouble(num) {
+    return num * 2;
+  },
+};
+
+// console.log(Omar);
+
+function getData(data: User) {
+  console.log(data.id);
+  console.log(data.name);
+  console.log(data.country);
+}
+// getData({ id: 1, name: "omar", country: "Eg", sayHello( ) });
+
+// ReOpen The Interface
+interface Settings {
+  theme: boolean;
+}
+
+interface Settings {
+  fontSize: number;
+}
