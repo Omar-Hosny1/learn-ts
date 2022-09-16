@@ -154,3 +154,14 @@ interface Settings {
 interface Settings {
   fontSize: number;
 }
+
+interface person {
+  name: string;
+  gender: string;
+}
+
+interface person1 extends person {
+  age: number;
+}
+
+let person2: person1 = { age: 10, gender: "male", name: "Omar" };

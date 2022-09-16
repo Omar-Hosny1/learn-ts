@@ -35,4 +35,63 @@ const addWithArrow = (num1, num2) => num1 + num2;
 const number = 8;
 let omar = "omar";
 omar = 1;
-// omar = true; err
+function getDat(day) {
+    if (day == "SD")
+        return "SD";
+    if (day == "SD")
+        return "FD";
+    if (day == "SD")
+        return "MD";
+    else
+        return "TS";
+}
+//TUPLES
+let articele;
+articele = [11, "A ONE", false];
+function sayHello() {
+    // void dont retutn any thing
+    console.log("Hello");
+}
+//enums
+var Levels;
+(function (Levels) {
+    Levels[Levels["easy"] = 10] = "easy";
+    Levels[Levels["medium"] = 5] = "medium";
+    Levels[Levels["hard"] = 3] = "hard";
+})(Levels || (Levels = {}));
+// let lvl = "easy";
+// if (lvl == "easy") {
+//   console.log(`${Levels.easy}`);
+// }
+// interface => as interfaceName
+const data = "omar";
+// console.log((data as string).charAt(0));
+//type anottation for objects
+const myObj = {
+    UN: "omar",
+    ID: 12,
+    skills: {
+        1: "HTML",
+        2: "CSS",
+    },
+};
+let Omar = {
+    id: 1,
+    name: "omar",
+    country: "Egypt",
+    sayHello() {
+        return "Hello " + this.name;
+    },
+    sayWelcome: () => {
+        return "Welcome " + Omar.name;
+    },
+    getDouble(num) {
+        return num * 2;
+    },
+};
+// console.log(Omar);
+function getData(data) {
+    console.log(data.id);
+    console.log(data.name);
+    console.log(data.country);
+}
